@@ -4,11 +4,11 @@ const char *version = "1.3";
 #include <ESPmDNS.h>
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
-#include <TickTwo.h>
-bool OTAhabilitado = true; // variable que se utilizara para inabilitar la función OTA si no se pudo lograr la conexion WIFI
+//#include <TickTwo.h>
+bool OTAhabilitado = false; // variable que se utilizara para inabilitar la función OTA si no se pudo lograr la conexion WIFI
 // Configuración de la red WiFi
-const char *ssid = "DPP";          // Nombre de la red WiFi
-const char *password = "monigote"; // Contraseña de la red WiFi
+const char *ssid = "";          // Nombre de la red WiFi
+const char *password = ""; // Contraseña de la red WiFi
 
 // Definir los pines donde están conectados los servos
 const int servoPin1 = 14; // Servo del párpado superior izquierdo. Abre sentido Anti  Horario
